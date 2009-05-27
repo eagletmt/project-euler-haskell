@@ -2,11 +2,11 @@ findMax :: [[Int]] -> Int
 findMax ls = fold $ reverse ls
   where
     fold :: [[Int]] -> Int
-    fold [xs:[]] = xs
+    fold [[xs]] = xs
     fold (xs:ys:rest) = fold $ (zipWith (+) ys $ adjacentMax xs):rest
     
     adjacentMax :: [Int] -> [Int]
-    adjacentMax (x:[]) = []
+    adjacentMax [x] = []
     adjacentMax (x:xs@(y:_)) = max x y : adjacentMax xs
 
 main = print $ findMax triangle
