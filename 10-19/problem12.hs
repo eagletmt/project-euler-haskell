@@ -1,4 +1,4 @@
-import Data.List (find, mapAccumL)
+import Data.List (find)
 import Data.Maybe (fromJust)
 
 divisors :: (Integral a) => a -> [a]
