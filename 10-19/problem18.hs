@@ -1,3 +1,8 @@
+{--
+  Copyright (c) 2009, eagletmt
+  Released under the MIT License <http://opensource.org/licenses/mit-license.php>
+--}
+
 findMax :: [[Int]] -> Int
 findMax ls = fold $ reverse ls
   where

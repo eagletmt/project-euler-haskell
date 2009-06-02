@@ -1,3 +1,8 @@
+{--
+  Copyright (c) 2009, eagletmt
+  Released under the MIT License <http://opensource.org/licenses/mit-license.php>
+--}
+
 factorial :: (Integral a) => a -> a
 factorial n = foldl1 (*) [2..n]
 

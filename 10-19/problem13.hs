@@ -1,3 +1,8 @@
+{--
+  Copyright (c) 2009, eagletmt
+  Released under the MIT License <http://opensource.org/licenses/mit-license.php>
+--}
+
 main = putStrLn $ take 10 $ show $ sum $ map (read :: String -> Integer) strNums
   where
     strNums = [
